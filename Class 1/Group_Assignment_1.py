@@ -14,7 +14,7 @@ def penny_count(n):
     for i in range(1,n+1):
         penny_sum = penny_sum * 2
         total_sum = total_sum + penny_sum
-        print(f"Day {i}'s salary is {int(penny_sum)} pennies and the total is ${int(total_sum)/100}.")
+        print(f"Day {i}'s salary is {int(penny_sum)} pennies and the total is ${int(total_sum)/100}")
     return (total_sum/100)
 
 n = int(input("Enter a number: "))
