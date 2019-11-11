@@ -1,7 +1,14 @@
-# import pandas as pd
-# flights = pd.read_csv("http://rcs.bu.edu/examples/python/data_analysis/flights.csv")
-# print(flights.head())
-# # Select the rows that have at least one missing value
+import pandas as pd
+import numpy as np
+flights = pd.read_csv("http://rcs.bu.edu/examples/python/data_analysis/flights.csv")
+
+desired_width=320
+pd.set_option('display.width', desired_width)
+np.set_printoptions(linewidth=desired_width)
+pd.set_option('display.max_columns',12)
+
+print(flights.head())
+# Select the rows that have at least one missing value
 # print(flights[flights.isnull().any(axis=1)].head())
 # # Filter all the rows where arr_delay value is missing:
 # flights1 = flights[ flights['arr_delay'].notnull( )]
