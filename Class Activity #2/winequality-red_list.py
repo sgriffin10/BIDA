@@ -16,5 +16,5 @@ qualities = []
 for item in wines:
     qualities.append(float(item[-1]))
 
-# Print the average of all the elements in the list
+# Print the average of all the elements in the listyeah yeah
 print(sum(qualities) / len(qualities))
