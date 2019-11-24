@@ -12,7 +12,7 @@ print(flights.head())
 # print(flights[flights.isnull().any(axis=1)].head())
 # # Filter all the rows where arr_delay value is missing:
 # flights1 = flights[ flights['arr_delay'].notnull( )]
-# print(flights1.head())
+# print(flights1.head())1
 # # Remove all the observations with missing values
 # flights2 = flights.dropna()
 # # Fill missing values with zeros
