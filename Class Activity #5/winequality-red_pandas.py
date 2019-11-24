@@ -15,8 +15,8 @@ print(df.dtypes)
 print(df['quality'].describe())
 
 # Visualization - generate a histogram for each of the Series in the dataset
-# df.hist()
-# plt.show()
+df.hist()
+plt.show()
 
 # Printing output - making sure that we can see all the columns
 # Specific only to PyCharm
