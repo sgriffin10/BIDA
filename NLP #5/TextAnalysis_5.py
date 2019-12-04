@@ -6,6 +6,6 @@ from pathlib import Path
 
 blob = TextBlob(Path("NLP #5/textblob1.txt").read_text())
 
-blob = TextBlob(text, analyzer=NaiveBayesAnalyzer)
-print(blob.sentiment)
+newblob = TextBlob(text, analyzer=NaiveBayesAnalyzer())
+print(newblob.sentiment)
 
