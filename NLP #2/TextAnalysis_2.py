@@ -9,6 +9,7 @@
 # # Delete stop words
 # from nltk.corpus import stopwords
 # stops = stopwords.words("english")
+# # print(stops)
 # for word in blob.words:
 #     if word not in stops:
 #         print(word)
