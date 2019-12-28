@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import metrics
 import numpy as np
-from sklearn.datasets import load_california
+# from sklearn.datasets import load_california
 
 housing = load_boston();
 print(housing.DESCR)
@@ -35,19 +35,20 @@ expected = y_test*1000
 
 # Accuracy
 
-print(metrics.r2_score(expected, predicted))
-print(metrics.mean_absolute_error(expected, predicted))
-print(metrics.mean_squared_error(expected, predicted))
-print(np.sqrt(metrics.mean_squared_error(expected, predicted)))
-print(np.sqrt(metrics.mean_squared_log_error(expected, predicted)))
 
-# ---visualization
+# print(metrics.r2_score(expected, predicted))
+# print(metrics.mean_absolute_error(expected, predicted))
+# print(metrics.mean_squared_error(expected, predicted))
+# print(np.sqrt(metrics.mean_squared_error(expected, predicted)))
+# print(np.sqrt(metrics.mean_squared_log_error(expected, predicted)))
 
-df = pd.DataFrame()
-df['Expected'] = pd.Series(expected)
-df['Predicted'] = pd.Series(predicted)
-plt.scatter(df['Expected'], df['Predicted'], alpha=0.5)
-plt.title('Scatter plot ')
-plt.xlabel('Expected')
-plt.ylabel('Predicted')
-plt.show()
+# # ---visualization
+
+# df = pd.DataFrame()
+# df['Expected'] = pd.Series(expected)
+# df['Predicted'] = pd.Series(predicted)
+# plt.scatter(df['Expected'], df['Predicted'], alpha=0.5)
+# plt.title('Scatter plot ')
+# plt.xlabel('Expected')
+# plt.ylabel('Predicted')
+# plt.show()
